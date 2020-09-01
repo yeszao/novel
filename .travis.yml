@@ -3,7 +3,10 @@ language:
 
 go:
   - 1.15
-  
+
+before_script:
+  - go mod vendor
+
 script:
   - echo $PWD
   - go build
